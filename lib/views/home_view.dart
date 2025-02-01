@@ -26,20 +26,16 @@ class HomePage extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.only(left: 10, top: 10, right: 10),
-        child: Center(
-          child: ListView(
-            children: [
-              buildSingleChildScrollView(),
-              SizedBox(
-                height: 20,
-              ),
-              Center(
-                child: FutureListView(
-                  category: "general",
-                ),
-              ),
-            ],
-          ),
+        child: ListView(
+          children: [
+            buildSingleChildScrollView(),
+            SizedBox(
+              height: 20,
+            ),
+            FutureListView(
+              category: "general",
+            ),
+          ],
         ),
       ),
       floatingActionButton: IconWidget()
